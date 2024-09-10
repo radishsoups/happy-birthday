@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 835.64 800">
+  <defs>
+    <style>
+      .b {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <path class="b" d="M730.71,505.6L188.84,353.46c-7.74-2.17-15.42,3.63-15.44,11.66-.3,91.46-.6,182.92-.9,274.38-.03,7.94,7.42,13.78,15.12,11.86,180.98-45.09,361.96-90.18,542.93-135.26,5.41-1.35,5.52-8.99.16-10.5Z"/>
+</svg>

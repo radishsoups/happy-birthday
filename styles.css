@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background: linear-gradient(#f7a1b1, #ffffff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 3.5em;
+    letter-spacing: -0.05em;
+    text-align: center;
+    margin: 0;
+    margin-top: 1em;
+}
+
+p {
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.05em;
+    text-align: right;
+    margin: 0;
+    margin-top: -1em;
+}
+
+#scene {
+    width: 200px;
+    height: 200px;
+    perspective: 600px;
+    perspective-origin: -70% 50%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0px) scale(1);
+    }
+
+    to {
+        transform: translateY(30vh) scale(1.7);
+    }
+}
+
+main:active .text {
+    animation: moving 2s linear;
+    animation-fill-mode: forwards;
+}
+
+main:active #side1 {
+    animation: fade 2s linear;
+    animation-fill-mode: forwards;
+    transform: rotateX(-90deg);
+    transition-duration: 2s;
+}
+
+main:active #side2 {
+    animation: fade 2s linear;
+    animation-fill-mode: forwards;
+    transform: rotateX(-90deg);
+    transition-duration: 2s;
+}
+
+main:active #side3 {
+    animation: fade 2s linear;
+    animation-fill-mode: forwards;
+    transform: rotateX(-90deg);
+    transition-duration: 2s;
+}
+
+main:active #top {
+    animation: fade 2s linear;
+    animation-fill-mode: forwards;
+    transform: rotateX(-90deg);
+    transition-duration: 2s;
+}
+
+main:active #bottom {
+    animation: fade 2s linear;
+    animation-fill-mode: forwards;
+    transform: rotateX(-90deg);
+    transition-duration: 2s;
+}
+
+main:active .wrapper {
+    animation: fade 1s linear;
+    animation-fill-mode: forwards;
+    transform: rotateX(-90deg);
+    transition-duration: 3s;
+}
+
+main:active .candles {
+    animation: fade 1s linear;
+    animation-fill-mode: forwards;
+    transform: rotateX(-90deg);
+    transition-duration: 3s;
+}
+
+.cake {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition-property: transform;
+    transform: translateX(-150px);
+}
+
+.icons {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+#side1 {
+    fill: rgb(213, 156, 173);
+    z-index: 3;
+    transform: rotateY(14deg) translateZ(110px);
+}
+
+#side2 {
+    fill: #d59cad;
+    z-index: 2;
+    transform: rotateY(-15deg) translateZ(20px) translateX(30px);
+}
+
+#top {
+    fill: rgb(240, 215, 222);
+    z-index: 3;
+    transform: rotateX(90deg) translate3d(52px, 65px, 0px) scale(0.9) scaleX(1.05);
+}
+
+#bottom {
+    fill: rgb(213, 156, 173);
+    z-index: 0;
+    transform: rotateX(90deg) translate3d(52px, 65px, -145px) scale(0.9) scaleX(1.05);
+}
+
+#side3 {
+    fill: #cb8599;
+    z-index: 5;
+    transform: rotateY(91deg) scaleX(0.5) translate3d(-145px, 0px, -105px);
+}
+
+.candles {
+    position: absolute;
+    perspective: 600px;
+    transform: translateX(180px) translateY(-130px) translateZ(70px);
+}
+
+.candle {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    border-top: 1px solid lightblue;
+}
+
+.candle:nth-child(1) {
+    background-color: rgb(137, 186, 202);
+    transform: translateY(300px) rotateY(20deg);
+}
+
+.candle:nth-child(2) {
+    background-color: rgb(144, 197, 214);
+    transform: translateY(300px) rotateY(40deg);
+}
+
+.candle:nth-child(3) {
+    background-color: rgb(158, 204, 219);
+    transform: translateY(300px) rotateY(60deg);
+}
+
+.candle:nth-child(4) {
+    background-color: rgb(167, 210, 225);
+    transform: translateY(300px) rotateY(80deg);
+}
+
+.candle:nth-child(5) {
+    background-color: rgb(177, 218, 231);
+    transform: translateY(300px) rotateY(100deg);
+}
+
+.candle:nth-child(6) {
+    transform: translateY(300px) rotateY(120deg);
+}
+
+.candle:nth-child(7) {
+    transform: translateY(300px) rotateY(140deg);
+}
+
+.candle:nth-child(8) {
+    transform: translateY(300px) rotateY(160deg);
+}
+
+.candle:nth-child(9) {
+    transform: translateY(300px) rotateY(180deg);
+}
+
+.candle:nth-child(10) {
+    transform: translateY(300px) rotateY(200deg);
+}
+
+.candle:nth-child(11) {
+    transform: translateY(300px) rotateY(220deg);
+}
+
+.candle:nth-child(12) {
+    transform: translateY(300px) rotateY(240deg);
+}
+
+.candle:nth-child(13) {
+    transform: translateY(300px) rotateY(260deg);
+}
+
+.candle:nth-child(14) {
+    transform: translateY(300px) rotateY(140deg);
+}
+
+.candle:nth-child(15) {
+    transform: translateY(300px) rotateY(280deg);
+}
+
+.candle:nth-child(16) {
+    transform: translateY(300px) rotateY(300deg);
+}
+
+.candle:nth-child(17) {
+    transform: translateY(300px) rotateY(320deg);
+}
+
+.candle:nth-child(18) {
+    transform: translateY(300px) rotateY(340deg);
+}
+
+.candle:nth-child(19) {
+    transform: translateY(300px) rotateY(360deg);
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+        transform-origin: 10% 0%;
+        left: 204px;
+        top: 135px;
+        fill: #fff5c9;
+    }
+
+    to {
+        transform: rotateY(360deg);
+        transform-origin: 10% 0%;
+        left: 204px;
+        top: 135px;
+        fill: #ffb26a;
+    }
+}
+
+#fire {
+    animation: spin 1s linear infinite;
+    animation-direction: alternate;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translateX(181px) translateY(135px) translateZ(70px);
+}
+
+#footer {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        position: absolute;
+        top: 1em;
+        left: 30vw;
+    }
+
+    h1 {
+        margin-top: 1em;
+    }
+
+    @keyframes moving {
+        from {
+            transform: translateX(0px) scale(1);
+        }
+
+        to {
+            transform: translateY(30vh) scale(1.5);
+        }
+    }
+}
